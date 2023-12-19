@@ -65,7 +65,9 @@ while True:
     #desenhando os pontos nas mãos
     drawHandLandmarks(frame,hand_landmarks )
     
+    #contando os dedos
     count_fingers(frame,hand_landmarks)
+
     cv2.imshow("Maos",frame)
 
     key = cv2.waitKey(1)
